@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antohi Gelu-Valentin — Computer Science & IT Student</title>
+  <meta name="description" content="Portfolio of Antohi Gelu-Valentin, Computer Science & IT student at Gheorghe Asachi Technical University of Iași.">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2311141b'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='28' font-weight='700' fill='%237c9cff'%3EGA%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Back to top">GA<span>.</span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+        <p class="eyebrow reveal">Hi, my name is</p>
+        <h1 class="hero-name reveal">Antohi Gelu-Valentin</h1>
+        <p class="hero-title reveal">Computer Science &amp; IT Student</p>
+        <p class="hero-lead reveal">
+          I build things across the stack — from embedded automation on Arduino
+          to real-time web platforms and games. Based in Iași, open to remote work.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="https://github.com/vantohi923" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-icon fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/gelu-antohi/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-icon fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="#contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-icon"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            Contact
+          </a>
+        </div>
+        </div>
+        <figure class="hero-photo reveal">
+          <img src="profile.jpg" alt="Portrait of Antohi Gelu-Valentin" width="500" height="482" onerror="this.parentNode.classList.add('no-photo')">
+          <span class="photo-fallback" aria-hidden="true">GA</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About / Education -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">01</span> About &amp; Education</h2>
+        <div class="about-grid">
+          <p class="about-text reveal">
+            I'm a third-year Computer Science &amp; IT student who enjoys working close to the
+            hardware as much as building modern web applications. I like clean architecture,
+            careful testing and shipping projects that solve real problems.
+          </p>
+          <article class="edu-card reveal">
+            <div class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+            </div>
+            <div>
+              <h3>Gheorghe Asachi Technical University of Iași</h3>
+              <p>B.Sc. Computer Science &amp; IT</p>
+              <span class="pill">Year 3</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">02</span> Skills</h2>
+        <ul class="skills reveal">
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Kotlin</li>
+          <li>JavaScript</li>
+          <li>Lua</li>
+          <li>Verilog</li>
+          <li>RISC-V Assembly</li>
+          <li>MATLAB</li>
+          <li>Git</li>
+          <li>Linux</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">03</span> Projects</h2>
+        <p class="section-sub reveal">Loaded live from my public GitHub repositories.</p>
+
+        <div class="filters reveal" id="filters" role="group" aria-label="Filter projects by language"></div>
+
+        <div id="projects-status" class="projects-status" aria-live="polite"></div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="num">04</span> Contact &amp; Info</h2>
+        <dl class="info-list reveal">
+          <div class="info-row">
+            <dt>Email</dt>
+            <dd><a href="mailto:gelu-valentin.antohi@student.tuiasi.ro">gelu-valentin.antohi@student.tuiasi.ro</a></dd>
+          </div>
+          <div class="info-row">
+            <dt>Phone</dt>
+            <!-- TODO: replace with your real phone number (both href and text) -->
+            <dd><a href="tel:+40700000000">[NUMĂRUL TĂU]</a></dd>
+          </div>
+          <div class="info-row">
+            <dt>Based in</dt>
+            <dd>Iași, România · Remote</dd>
+          </div>
+          <div class="info-row">
+            <dt>Languages</dt>
+            <dd>Romanian (Native) · English (B2)</dd>
+          </div>
+          <div class="info-row">
+            <dt>Available</dt>
+            <dd><span class="status-dot" aria-hidden="true"></span>Immediately — Full-time, part-time, internship or B2B</dd>
+          </div>
+          <div class="info-row">
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/vantohi923" target="_blank" rel="noopener">github.com/vantohi923</a></dd>
+          </div>
+          <div class="info-row">
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/gelu-antohi/" target="_blank" rel="noopener">linkedin.com/in/gelu-antohi</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Antohi Gelu-Valentin</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
